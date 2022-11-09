@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+header {
+  display: flex;
+  align-items: center;
+  width: 87.5rem;
+  height: 5.938rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  justify-self: center;
+}
+
+.Bookstore-CMS {
+  width: 15rem;
+  height: 2.313rem;
+  font-size: 1.875rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.BOOKS {
+  width: 3.688rem;
+  height: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.CATEGORIES {
+  width: 6.563rem;
+  height: 1rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+.d-flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin: 0 1rem;
+}
