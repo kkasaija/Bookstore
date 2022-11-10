@@ -1,13 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Getting Started with Create React App [Math Magicians: Setup]
+# Bookstore App `Initial` setup
 
 ### Learning Objectives
-- Set up a React app.
-- Use React documentation.
-
+- Use React Router.
+- Use React components.
 ### Description
-This is the first project of the Math Magicians application. Setting up the environment and tools needed to develop a React application.
+In this project, I initialized react App, setup re-usable components for the book store App that i will be building in the next Assignments
 
 ### General requirements
 - No [linter errors](https://github.com/microverseinc/linters-config).
