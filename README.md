@@ -24,13 +24,20 @@ This is the first project of the Math Magicians application. Setting up the envi
 - For [MacOS](https://github.com/microverseinc/curriculum_support_resources/tree/main/react_and_redux/03_react_setup_MacOS) users.
 - For [Ubuntu](https://github.com/microverseinc/curriculum_support_resources/tree/main/react_and_redux/04_react_setup%20on%20wsl) users.
 
+### Milestone Reached
+- [x] Set up `React` App
+- [x] Creatd a directory called components.
+- [x] Inside components, created Categories, Boolist, Book, Form, Header and Home components.
+- [x] Used React Router.
+- [x] Used css to apply basic styles.
+
 ### `npm start`
 
 Runs the app in the development mode.\ Or
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Live Demo 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]()
 
 ## Authors
 
@@ -43,18 +50,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kasaija-Kenneth/MathMagiciansApp/issues).
+Feel free to check the [issues page]().
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- [Osong Agberndifor] (https://www.loom.com/share/c97732a88b604a4cac489f8af7f1e2e9) whose loom walk through video clip made the installation much easier.
-
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is []() licensed.

@@ -3,7 +3,7 @@ import Book from './Book';
 const BookList = () => {
   const books = [
     {
-      id: 1, title: 'things fall apart', author: 'Chinua Achebe', genre: 'History',
+      id: 1, title: 'Suppose you were an idiot', author: 'Mark Twain', genre: 'Biography & Autobiography',
     },
   ];
   return books.map((book) => (
