@@ -8,13 +8,12 @@ const Form = () => (
       <div className="form-book-category">
         <select className="select" default name="category">
           <option value="">
-            Category
+            Author
           </option>
-          <option value="History">History</option>
-          <option value="Romance">Romance</option>
-          <option value="Science">Sience</option>
-          <option value="Action">Action</option>
-          <option value="Crime">Crime</option>
+          <option value="History">William Shakespeare</option>
+          <option value="Science">William Faulkner</option>
+          <option value="Action">Fyodor Dostoevsky</option>
+          <option value="Crime">Ernest Hemingway</option>
         </select>
       </div>
       <button className="add-btn" type="submit">
