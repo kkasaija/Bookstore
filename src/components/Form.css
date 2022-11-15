@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 .form-container {
-  width: 84rem;
-  margin: 2.313rem auto;
+  width: 84em;
+  margin: 2.313em auto;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
 }
@@ -13,29 +13,28 @@ form {
 }
 
 .form-book-title {
-  width: 43.5rem;
-  height: 2.813rem;
+  width: 43.5em;
+  height: 2.813em;
   margin-top: 0;
-  margin-right: 2.125rem;
+  margin-right: 2.125em;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
 
 .select {
-  width: 26.813rem;
-  height: 3.1rem;
-  margin-right: 2.125rem;
-  padding: 0.375rem 0.938rem 0.563rem 1rem;
+  width: 26.813em;
+  height: 2.813em;
+  margin-right: 2.125em;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
 
 .add-btn {
-  width: 11.5rem;
-  height: 3.06rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  width: 11.5em;
+  height: 3.06em;
+  padding: 0.801em 1.188em 0.886em 1.375em;
   border-radius: 3px;
   background-color: #0290ff;
 }
@@ -43,11 +42,11 @@ form {
 .form-title {
   display: flex;
   align-items: center;
-  width: 15.875rem;
-  height: 3.5rem;
-  margin: 1.813rem 32.75rem 1.188rem 0;
+  width: 15.875em;
+  height: 3.5em;
+  margin: 1.813em 32.75em 1.188em 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;

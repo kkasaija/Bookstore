@@ -3,17 +3,17 @@
 header {
   display: flex;
   align-items: center;
-  width: 87.5rem;
-  height: 5.938rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  width: 84em;
+  height: 5.938em;
+  padding: 1.438em 6.188em 1.688em 6.25em;
   background-color: #fff;
   justify-self: center;
 }
 
 .Bookstore-CMS {
-  width: 15rem;
-  height: 2.313rem;
-  font-size: 1.875rem;
+  width: 15em;
+  height: 2.313em;
+  font-size: 1.875em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-stretch: normal;
@@ -24,10 +24,10 @@ header {
 }
 
 .BOOKS {
-  width: 3.688rem;
-  height: 1rem;
+  width: 3.688em;
+  height: 1em;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.813rem;
+  font-size: 0.813em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -37,11 +37,11 @@ header {
 }
 
 .CATEGORIES {
-  width: 6.563rem;
-  height: 1rem;
+  width: 6.563em;
+  height: 1em;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.813rem;
+  font-size: 0.813em;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -56,5 +56,5 @@ header {
 
 li {
   list-style: none;
-  margin: 0 1rem;
+  margin: 0 1em;
 }

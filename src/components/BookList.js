@@ -3,11 +3,11 @@ import Book from './Book';
 const BookList = () => {
   const books = [
     {
-      id: 1, title: 'Suppose you were an idiot', author: 'Mark Twain', genre: 'Biography & Autobiography',
+      id: 1, title: 'Book tile', author: 'Book author',
     },
   ];
   return books.map((book) => (
-    <Book genre={book.genre} title={book.title} author={book.author} key={book.id} />
+    <Book title={book.title} author={book.author} key={book.id} />
   ));
 };
 

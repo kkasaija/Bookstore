@@ -30,21 +30,14 @@ const Form = () => {
           onChange={(event) => setTitle(event.target.value)}
         />
         <div className="form-book-category">
-          <select
+          <input
             className="select"
             default
             name="category"
             value={author}
+            placeholder="Author"
             onChange={(event) => setAuthor(event.target.value)}
-          >
-            <option value="">
-              Author
-            </option>
-            <option value="History">William Shakespeare</option>
-            <option value="Science">William Faulkner</option>
-            <option value="Action">Fyodor Dostoevsky</option>
-            <option value="Crime">Ernest Hemingway</option>
-          </select>
+          />
         </div>
         <button className="add-btn" type="submit">
           ADD BOOK
