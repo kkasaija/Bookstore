@@ -1,5 +1,5 @@
-const ADD_BOOK = 'ADD_BOOK';
-const DELETE_BOOK = 'DELETE_BOOK';
+const ADD_BOOK = 'bookStore/books/ADD_BOOK';
+const DELETE_BOOK = 'bookStore/books/DELETE_BOOK';
 
 const newBook = (action) => {
   const { title, author, genre } = action;

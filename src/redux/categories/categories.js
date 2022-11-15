@@ -1,4 +1,4 @@
-const CATEGORIES_STATUS = 'CATEGORIES_STATUS';
+const CATEGORIES_STATUS = 'bookStore/categories/CATEGORIES_STATUS';
 
 export default function categoriesReducer(state = {}, action) {
   switch (action.type) {
