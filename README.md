@@ -1,12 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore App `Initial` setup
+# Bookstore App `Actions and Reducers`
 
 ### Learning Objectives
-- Use React Router.
-- Use React components.
+- Add Redux Toolkit using `npm install react-redux @reduxjs/toolkit`
+- Write book actions and reducer (in /src/redux/books/books.js) using the [ducks pattern](https://github.com/erikras/ducks-modular-redux).
+- Write categories actions and reducer (in /src/redux/categories/categories.js) using the [ducks pattern](https://github.com/erikras/ducks-modular-redux).
+- Configure the Redux Store (/src/redux/configureStore.js)
+
 ### Description
-In this project, I initialized react App, setup re-usable components for the book store App that i will be building in the next Assignments
+Configure Redux Store and write actions and reducer for adding and removing books.
 
 ### General requirements
 - No [linter errors](https://github.com/microverseinc/linters-config).
@@ -15,7 +18,7 @@ In this project, I initialized react App, setup re-usable components for the boo
 - JavaScript [best practices](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/javascript_best_practices.md)
 
 ### Built With
-- React
+- React and Redux
 
 ### Setup instructions for Different OS's
 - For [Windows](https://github.com/microverseinc/curriculum_support_resources/tree/main/react_and_redux/02_react_setup_windows), users.
