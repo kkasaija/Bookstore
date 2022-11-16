@@ -3,17 +3,20 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
-  const [titleValue, setTitleValue] = useState();
-  const [authorValue, setAuthorValue] = useState();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const dispatch = useDispatch();
 
   const onSubmit = (event) => {
     event.preventDefault();
     dispatch(addBook({
-      title: titleValue,
-      author: authorValue,
+      title,
+      author,
+      id: Math.floor(Math.random() * 2.5),
     }));
+    setAuthor('');
+    setTitle(' ');
   };
 
   return (
@@ -25,16 +28,16 @@ const Form = () => {
           type="text"
           required
           placeholder="Title"
-          value={titleValue}
-          onChange={(event) => setTitleValue(event.target.value)}
+          value={title}
+          onChange={(event) => setTitle(event.target.value)}
         />
         <input
           className="form-book-author"
           type="text"
           required
           placeholder="Author"
-          value={authorValue}
-          onChange={(event) => setAuthorValue(event.target.value)}
+          value={author}
+          onChange={(event) => setAuthor(event.target.value)}
         />
         <button className="add-btn" type="submit">
           ADD BOOK
