@@ -7,34 +7,39 @@ const newBook = (action) => {
     title,
     author,
     genre,
+    completed: '0%',
+    chapter: '0',
     id: Date.now(),
   };
 };
 
-const removeBook = (state = [], id) => (state.filter((book) => book.id !== id));
+const removeBook = (state = [], action) => {
+  const books = state.filter((book) => book.title !== action.title);
+  return books;
+};
 
 export default function booksReducer(state = [], action) {
-  let books = null;
+  let books = [];
   switch (action.type) {
     case ADD_BOOK:
       books = [...state, newBook(action)];
       return books;
     case DELETE_BOOK:
-      books = removeBook(state, action.id);
+      books = removeBook(state, action);
       return books;
     default:
       return state;
   }
 }
 
-export const addBook = (title, author, genre) => ({
+export const addBook = ({ title, author, genre }) => ({
   type: ADD_BOOK,
   title,
   author,
   genre,
 });
 
-export const deleteBook = (id) => ({
+export const deleteBook = ({ title }) => ({
   type: DELETE_BOOK,
-  id,
+  title,
 });

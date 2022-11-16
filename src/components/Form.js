@@ -1,19 +1,18 @@
-import './Form.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
-  const [title, setTitle] = useState();
-  const [author, setAuthor] = useState();
+  const [titleValue, setTitleValue] = useState();
+  const [authorValue, setAuthorValue] = useState();
 
   const dispatch = useDispatch();
 
   const onSubmit = (event) => {
     event.preventDefault();
     dispatch(addBook({
-      title,
-      author,
+      title: titleValue,
+      author: authorValue,
     }));
   };
 
@@ -26,19 +25,17 @@ const Form = () => {
           type="text"
           required
           placeholder="Title"
-          value={title}
-          onChange={(event) => setTitle(event.target.value)}
+          value={titleValue}
+          onChange={(event) => setTitleValue(event.target.value)}
         />
-        <div className="form-book-category">
-          <input
-            className="select"
-            default
-            name="category"
-            value={author}
-            placeholder="Author"
-            onChange={(event) => setAuthor(event.target.value)}
-          />
-        </div>
+        <input
+          className="form-book-author"
+          type="text"
+          required
+          placeholder="Author"
+          value={authorValue}
+          onChange={(event) => setAuthorValue(event.target.value)}
+        />
         <button className="add-btn" type="submit">
           ADD BOOK
         </button>

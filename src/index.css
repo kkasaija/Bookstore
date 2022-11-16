@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* font-family: 'Poppins', sans-serif; */
+body{
+  background-color: #fafafa;
+  margin: 0;
+}
+
+.main {
+  scrollbar-width: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  scroll-margin-top: 2px;
+  height: 95px;
+  margin: 0;
+  padding: 1.438rem 3.188rem 1.688rem 3.25rem;
+  background-color: #fff;
+}
+
+.Bookstore-CMS {
+  width: 15em;
+  height: 2.313em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: normal;
+  color: #0290ff;
+  display: flex;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  font-size: 22px;
+}
+
+.d-flex li {
+  list-style: none;
+  margin: 0 1em;
+}
+
+.BOOKS {
+  width: 3.688em;
+  height: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.CATEGORIES {
+  width: 6.563em;
+  height: 1em;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  text-decoration: none;
+}
+
+.booklist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: calc(100vh - 180px);
+}
+
+.Lesson-Panel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75rem;
+  height: 10.625rem;
+  margin: 0 auto 5px auto;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.book-header-buttons {
+  display: flex;
+}
+
+.Suzanne-Collins {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.Title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.Comments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.188em;
+  margin: 0.188em 0.938em 0.125em 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875em;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75rem;
+  height: 114px;
+  justify-content: center;
+  margin: 30px 3rem 0 3rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding: 0 16px;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  width: 49em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #888;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-book-title {
+  width: 45.5em;
+  height: 2.813em;
+  margin-top: 0;
+  margin-right: 2.125em;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-left: 5px;
+}
+
+.add-btn {
+  width: 11.5em;
+  height: 3.06em;
+  padding: 0.801em 1.188em 0.886em 1.375em;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.form-book-author {
+  width: 26.813em;
+  height: 2.813em;
+  margin-right: 2.125em;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-left: 5px;
+}
+
+#categories-page  {
+  margin-top: 95px;
+}
