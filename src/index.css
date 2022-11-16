@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-/* font-family: 'Poppins', sans-serif; */
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
   background-color: #fafafa;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main {
@@ -97,7 +99,7 @@ body{
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
@@ -107,7 +109,7 @@ body{
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: -0.2px;
@@ -148,7 +150,7 @@ body{
   color: #888;
 }
 
-form{
+form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,6 +185,6 @@ form{
   padding-left: 5px;
 }
 
-#categories-page  {
+#categories-page {
   margin-top: 95px;
 }
