@@ -13,7 +13,6 @@ const Form = () => {
     dispatch(addBook({
       title,
       author,
-      id: Math.floor(Math.random() * 2.5),
     }));
     setAuthor('');
     setTitle(' ');

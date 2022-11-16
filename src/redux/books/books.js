@@ -3,7 +3,7 @@ const DELETE_BOOK = 'bookStore/books/DELETE_BOOK';
 
 const newBook = (action) => {
   const {
-    title, author, genre, id,
+    title, author, genre,
   } = action;
   return {
     title,
@@ -11,12 +11,12 @@ const newBook = (action) => {
     genre,
     completed: '0%',
     chapter: '0',
-    id,
+    id: Date.now(),
   };
 };
 
 const removeBook = (state = [], action) => {
-  const books = state.filter((book) => book.id !== action.title);
+  const books = state.filter((book) => book.title !== action.title);
   return books;
 };
 
@@ -41,7 +41,7 @@ export const addBook = ({ title, author, genre }) => ({
   genre,
 });
 
-export const deleteBook = ({ id }) => ({
+export const deleteBook = ({ title }) => ({
   type: DELETE_BOOK,
-  id,
+  title,
 });

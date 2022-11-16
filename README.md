@@ -32,6 +32,9 @@ Configure Redux Store and write actions and reducer for adding and removing book
 - [x] Inside components, created Categories, Boolist, Book, Form, Header and Home components.
 - [x] Used React Router.
 - [x] Used css to apply basic styles.
+- [x] Used useSelector to consume the state.
+- [x] Imported Redux Provider and store in the main component of React app.
+- [x] Imported Redux useDispatch.
 
 ### `npm start`
 
