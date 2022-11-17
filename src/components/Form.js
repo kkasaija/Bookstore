@@ -1,11 +1,10 @@
-import './Form.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
-  const [title, setTitle] = useState();
-  const [author, setAuthor] = useState();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const dispatch = useDispatch();
 
@@ -15,6 +14,8 @@ const Form = () => {
       title,
       author,
     }));
+    setAuthor('');
+    setTitle(' ');
   };
 
   return (
@@ -29,16 +30,14 @@ const Form = () => {
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
-        <div className="form-book-category">
-          <input
-            className="select"
-            default
-            name="category"
-            value={author}
-            placeholder="Author"
-            onChange={(event) => setAuthor(event.target.value)}
-          />
-        </div>
+        <input
+          className="form-book-author"
+          type="text"
+          required
+          placeholder="Author"
+          value={author}
+          onChange={(event) => setAuthor(event.target.value)}
+        />
         <button className="add-btn" type="submit">
           ADD BOOK
         </button>
