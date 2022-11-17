@@ -7,6 +7,10 @@
 - Write book actions and reducer (in /src/redux/books/books.js) using the [ducks pattern](https://github.com/erikras/ducks-modular-redux).
 - Write categories actions and reducer (in /src/redux/categories/categories.js) using the [ducks pattern](https://github.com/erikras/ducks-modular-redux).
 - Configure the Redux Store (/src/redux/configureStore.js)
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+- Connect an existing API via Redux and use the data to display something in a UI.
 
 ### Description
 Configure Redux Store and write actions and reducer for adding and removing books.
@@ -35,6 +39,9 @@ Configure Redux Store and write actions and reducer for adding and removing book
 - [x] Used useSelector to consume the state.
 - [x] Imported Redux Provider and store in the main component of React app.
 - [x] Imported Redux useDispatch.
+- [x] Used `fetch` with `createAsyncThunk` for making API calls.
+- [x] Fetched book list from Bookstore API on Books page load
+- [x] Refactored `add book` and `remove book` features to persist changes in the server.
 
 ### `npm start`
 

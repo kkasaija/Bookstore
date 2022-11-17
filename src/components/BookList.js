@@ -1,18 +1,27 @@
-import { useSelector, shallowEqual } from 'react-redux';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
+import { displayBooks } from '../redux/books/books';
 
-const BookList = () => {
-  const books = useSelector((state) => state.books, shallowEqual);
-
-  return books.map((book) => (
-    <Book
-      title={book.title}
-      author={book.author}
-      key={book.id}
-      completed={book.completed}
-      chapter={book.chapter}
-    />
-  ));
+const BooksList = () => {
+  const dispatch = useDispatch();
+  dispatch(displayBooks());
+  const books = useSelector((state) => state.books);
+  return (
+    <section id="books-page">
+      <div className="books">
+        {books.map((book) => (
+          <Book
+            key={book.item_id}
+            id={book.item_id}
+            title={book.title}
+            author={book.author}
+            category={book.category}
+          />
+        ))}
+      </div>
+      <hr />
+    </section>
+  );
 };
-
-export default BookList;
+export default BooksList;
