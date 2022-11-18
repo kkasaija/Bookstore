@@ -75,9 +75,3 @@ body {
   background-color: #fff;
   padding: 0 16px;
 }
-
-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}

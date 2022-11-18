@@ -3,57 +3,26 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../redux/books/books';
 
-const Book = ({
-  id, title, author, category,
-}) => {
+const Book = (props) => {
   const dispatch = useDispatch();
-  const delBook = (bookId) => {
-    dispatch(deleteBook(Number(bookId)));
+  const { bookProps } = props;
+  const handleRemove = () => {
+    dispatch(deleteBook(bookProps.item_id));
   };
-
   return (
-    <div className="book-container">
-      <div className="book-info">
-        <p className="book-category">{category}</p>
-        <h3 className="book-title">{title}</h3>
-        <h4 className="book-author">{author}</h4>
-        <div className="book-buttons">
-          <button type="button">Comments</button>
-          <button type="button" onClick={() => delBook(id)}>
-            Remove
-          </button>
-          <button type="button">Edit</button>
-        </div>
-      </div>
-      <div className="book-progress">
-        <div className="circle-wrap">
-          <div className="circle">
-            <div className="mask half">
-              <div className="fill">
-                <div className="inside-circle" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p className="percentage">50%</p>
-          <p className="completed">Completed</p>
-        </div>
-      </div>
-      <div className="book-update">
-        <p className="current-chap">CURRENT CHAPTER</p>
-        <p className="chap-num">Chapter 17</p>
-        <button type="button">UPDATE PROGRESS</button>
-      </div>
-    </div>
+    <>
+      <p>{bookProps.title}</p>
+      <p>{bookProps.author}</p>
+      <button type="button" onClick={handleRemove}>
+        Delete
+      </button>
+    </>
   );
 };
 
 Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  bookProps: PropTypes.object.isRequired,
 };
 
 export default Book;
