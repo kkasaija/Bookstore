@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
 const Header = () => (
   <header style={{ position: 'sticky', top: 0, zIndex: 1 }}>
