@@ -34,7 +34,6 @@ const ProgressBar = (props) => {
   };
 
   useEffect(updateProgress, []);
-
   return (
     <div className="chapter-progress">
       <div className="circular">

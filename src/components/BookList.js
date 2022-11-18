@@ -12,15 +12,12 @@ const Books = () => {
   }, [dispatch]);
 
   return (
-    <section id="books-page">
-      <div className="books">
-        {books.map((book) => (
-          <Book key={book.item_id} bookProps={book} />
-        ))}
-        <Form />
-      </div>
-      <hr />
-    </section>
+    <>
+      {books.map((book) => (
+        <Book key={book.item_id} bookProps={book} />
+      ))}
+      <Form />
+    </>
   );
 };
 

@@ -1,22 +1,40 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FaUserAlt } from 'react-icons/fa';
 import '../styles/Header.css';
 
-const Header = () => (
-  <header style={{ position: 'sticky', top: 0, zIndex: 1 }}>
-    <div className="header">
-      <h1 className="Bookstore-CMS">Bookstore CMS</h1>
-      <nav className="nav">
-        <ul className="d-flex">
-          <li>
-            <Link className="BOOKS" to="/">Books</Link>
-          </li>
-          <li>
-            <Link className="CATEGORIES" to="categories">Categories</Link>
-          </li>
+const Header = () => {
+  const links = [
+    {
+      id: 1,
+      path: '/',
+      text: 'Books',
+    },
+    {
+      id: 2,
+      path: '/categories',
+      text: 'Categories',
+    },
+  ];
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <h2>BookStore CMS</h2>
+        <ul className="items">
+          {links.map((link) => (
+            <li key={link.id}>
+              <NavLink className="navlink" exact="true" to={link.path}>
+                {link.text}
+              </NavLink>
+            </li>
+          ))}
         </ul>
-      </nav>
-    </div>
-  </header>
-);
+      </div>
+      <div className="avatar">
+        <FaUserAlt />
+      </div>
+    </nav>
+  );
+};
 
 export default Header;
