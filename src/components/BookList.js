@@ -9,7 +9,7 @@ const Books = () => {
   const books = useSelector((state) => state.booksReducer.booksLists);
   useEffect(() => {
     dispatch(displayBooks());
-  }, []);
+  });
 
   return (
     <section id="books-page">
