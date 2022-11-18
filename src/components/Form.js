@@ -3,46 +3,51 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
-
   const dispatch = useDispatch();
+  const [form, setForm] = useState({ title: '', author: '', category: '' });
+  const handleChange = (e) => {
+    e.preventDefault();
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const onSubmit = (event) => {
-    event.preventDefault();
-    dispatch(addBook({
-      title,
-      author,
-    }));
-    setAuthor('');
-    setTitle(' ');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (form.title.trim() && form.author.trim()) {
+      const data = {
+        item_id: Date.now(),
+        title: form.title,
+        author: form.author,
+        category: form.category,
+      };
+      dispatch(addBook(data));
+      setForm({ title: '', author: '', category: '' });
+    }
   };
 
   return (
-    <div className="form-container">
-      <h2 className="form-title">ADD NEW BOOK</h2>
-      <form onSubmit={onSubmit}>
+    <>
+      <h1>ADD BOOK</h1>
+      <form onSubmit={handleSubmit}>
         <input
-          className="form-book-title"
           type="text"
-          required
-          placeholder="Title"
-          value={title}
-          onChange={(event) => setTitle(event.target.value)}
+          placeholder="Book title"
+          name="title"
+          value={form.title}
+          onChange={handleChange}
         />
         <input
-          className="form-book-author"
           type="text"
-          required
-          placeholder="Author"
-          value={author}
-          onChange={(event) => setAuthor(event.target.value)}
+          placeholder="Book author"
+          name="author"
+          value={form.author}
+          onChange={handleChange}
         />
-        <button className="add-btn" type="submit">
-          ADD BOOK
-        </button>
+        <button type="submit" id="add-book">Add Book</button>
       </form>
-    </div>
+    </>
   );
 };
 

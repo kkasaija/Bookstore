@@ -1,4 +1,4 @@
-// Actions
+// Action
 const CHECK_STATUS = 'bookstore/categoriesReducer/CHECK_STATUS';
 
 // Reducer

@@ -42,44 +42,7 @@ body {
   margin: 0 1em;
 }
 
-.BOOKS {
-  width: 3.688em;
-  height: 1em;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.813em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
-  text-decoration: none;
-}
-
-.CATEGORIES {
-  width: 6.563em;
-  height: 1em;
-  opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.813em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
-  text-decoration: none;
-}
-
-.booklist {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  overflow-y: scroll;
-  max-height: calc(100vh - 180px);
-}
-
-.Lesson-Panel {
+.book-container {
   display: flex;
   flex-wrap: wrap;
   width: 75rem;
@@ -91,41 +54,13 @@ body {
   padding: 1em;
 }
 
-.book-header-buttons {
+.booklist {
   display: flex;
-}
-
-.Suzanne-Collins {
-  width: 6.688rem;
-  height: 1.188rem;
-  margin: 0.25rem 0 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
-}
-
-.Title {
-  width: 12.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.375rem;
-  font-weight: bold;
-  letter-spacing: -0.2px;
-  color: #121212;
-}
-
-.Comments {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
-  height: 1.188em;
-  margin: 0.188em 0.938em 0.125em 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.875em;
-  font-weight: 300;
-  color: #4386bf;
+  overflow-y: scroll;
+  max-height: calc(100vh - 180px);
 }
 
 .form-container {
@@ -139,52 +74,4 @@ body {
   border: solid 1px #e8e8e8;
   background-color: #fff;
   padding: 0 16px;
-}
-
-.form-title {
-  display: flex;
-  align-items: center;
-  width: 49em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #888;
-}
-
-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.form-book-title {
-  width: 45.5em;
-  height: 2.813em;
-  margin-top: 0;
-  margin-right: 2.125em;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #fff;
-  padding-left: 5px;
-}
-
-.add-btn {
-  width: 11.5em;
-  height: 3.06em;
-  padding: 0.801em 1.188em 0.886em 1.375em;
-  border-radius: 3px;
-  background-color: #0290ff;
-}
-
-.form-book-author {
-  width: 26.813em;
-  height: 2.813em;
-  margin-right: 2.125em;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #fff;
-  padding-left: 5px;
-}
-
-#categories-page {
-  margin-top: 95px;
 }

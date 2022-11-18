@@ -1,8 +1,11 @@
-import { combineReducers, createStore } from 'redux';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import booksReducer from './books/books';
 import categoriesReducer from './categories/categories';
 
-const rootReducer = combineReducers({ books: booksReducer, categories: categoriesReducer });
-const store = createStore(rootReducer);
+const rootReducer = combineReducers({
+  booksReducer,
+  categoriesReducer,
+});
+const store = configureStore({ reducer: rootReducer });
 
 export default store;
