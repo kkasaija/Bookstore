@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import '../styles/Form.css';
 
 const Form = () => {
   const dispatch = useDispatch();
-  const [form, setForm] = useState({ title: '', author: '', category: '' });
+  const [form, setForm] = useState({ title: '', author: '' });
   const handleChange = (e) => {
     e.preventDefault();
     setForm({
@@ -20,34 +21,51 @@ const Form = () => {
         item_id: Date.now(),
         title: form.title,
         author: form.author,
-        category: form.category,
+        category: '',
       };
       dispatch(addBook(data));
-      setForm({ title: '', author: '', category: '' });
+      setForm({ title: '', author: '' });
     }
   };
 
   return (
-    <>
+    <div className="add-book">
       <h1>ADD BOOK</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Book title"
+          placeholder="Enter book title"
           name="title"
           value={form.title}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
-          placeholder="Book author"
+          placeholder="Enter book Author"
           name="author"
           value={form.author}
           onChange={handleChange}
+          required
         />
-        <button type="submit" id="add-book">Add Book</button>
+        <label htmlFor="category-select">
+          <select
+            onChange={handleChange}
+            id="category-select"
+            name="category"
+            value={form.category}
+            required
+          >
+            <option disabled> Book </option>
+            <option value="mathematics"> Mathematics </option>
+            <option value="physics"> Physics </option>
+            <option value="chemistry"> Chemistry </option>
+            <option value="english"> English </option>
+          </select>
+        </label>
+        <button type="submit" className="add-btn">Add Book</button>
       </form>
-    </>
+    </div>
   );
 };
 
